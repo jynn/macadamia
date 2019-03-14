@@ -8,76 +8,94 @@ author: viona
 1.	**`true`**
 	<details>
 	<summary>&shy;</summary>
-	> <code>5 is a truth-function of { 1 , 2 }
-	5 = Germany invaded both Poland and Czechoslovakia
-	1 = Germany invaded Poland
-	2 = Germany invaded Czechoslovakia</code>
+
+		5 is a truth-function of { 1 , 2 }
+		5 = Germany invaded both Poland and Czechoslovakia
+		1 = Germany invaded Poland
+		2 = Germany invaded Czechoslovakia
+
 	</details>
 
 2.	**`true`**
 	<details>
 	<summary>&shy;</summary>
-	> <code>6 is a truth-function of { 3 , 4 }
-	6 = Either Germany was allied with Italy or it was allied with Japan
-	3 = Germany was allied with Italy
-	4 = Germany was allied with Japan</code>
+
+		6 is a truth-function of { 3 , 4 }
+		6 = Either Germany was allied with Italy or it was allied with Japan
+		3 = Germany was allied with Italy
+		4 = Germany was allied with Japan
+
 	</details>
 
 3.	**`true`**
 	<details>
 	<summary>&shy;</summary>
-	> <code>7 is a truth-function of { 4 }
-	7 = Germany was not allied with Japan
-	4 = Germany was allied with Japan</code>
+
+		7 is a truth-function of { 4 }
+		7 = Germany was not allied with Japan
+		4 = Germany was allied with Japan
+
 	</details>
 
 4.	**`false`**
 	<details>
 	<summary>&shy;</summary>
-	> <code>8 is a truth-function of { 3 , 4 }
-	8 = Germany became allied with Japan after becoming allied with Italy
-	3 = Germany was allied with Italy
-	4 = Germany was allied with Japan</code>
+
+		8 is a truth-function of { 3 , 4 }
+		8 = Germany became allied with Japan after becoming allied with Italy
+		3 = Germany was allied with Italy
+		4 = Germany was allied with Japan
+
 	</details>
 
 5.	**`false`**
 	<details>
 	<summary>&shy;</summary>
-	> <code>9 is a truth-function of { 1 }
-	9 = Germany conquered Poland
-	1 = Germany invaded Poland</code>
+
+		9 is a truth-function of { 1 }
+		9 = Germany conquered Poland
+		1 = Germany invaded Poland
+
 	</details>
 
 6.	**`true`**
 	<details>
 	<summary>&shy;</summary>
-	> <code>10 is a truth-function of { 3 }
-	10 = Italy was allied with Germany
-	3 = Germany was allied with Italy</code>
+
+		10 is a truth-function of { 3 }
+		10 = Italy was allied with Germany
+		3 = Germany was allied with Italy
+
 	</details>
 
 7.	**`false`**
 	<details>
 	<summary>&shy;</summary>
-	> <code>11 is a truth-function of { 1 , 2 }
-	11 = Neither Poland nor Czechoslovakia invaded Germany
-	1 = Germany invaded Poland
-	2 = Germany invaded Czechoslovakia</code>
+
+		11 is a truth-function of { 1 , 2 }
+		11 = Neither Poland nor Czechoslovakia invaded Germany
+		1 = Germany invaded Poland
+		2 = Germany invaded Czechoslovakia
+
 	</details>
 
 8.	**`false`**
 	<details>
 	<summary>&shy;</summary>
-	> <code>12 = Germany was allied with Italy until Germany invaded Poland
-	1 = Germany invaded Poland
-	3 = Germany was allied with Italy</code></sub>
+
+		12 = Germany was allied with Italy until Germany invaded Poland
+		1 = Germany invaded Poland
+		3 = Germany was allied with Italy</sub>
+	</details>
 
 #	QS2
 1.	**Y**<sub>1</sub> =
 	`((A & B & ~C) ∨ (~A & B & C))`
-2.	**Y**<sub>2</sub> =
-	`~((A & B & C) ∨ (A & B & ~C) ∨ (A & ~B & C) ∨ (A & ~B & ~C) ∨
-	(~A & B & C) ∨ (~A & B & ~C) ∨ (~A & ~B & C) ∨ (~A & ~B & ~C))`
+2.	**Y**<sub>2</sub> =  
+
+		~((A & B & C) ∨ (A & B & ~C) ∨ (A & ~B & C) ∨ (A & ~B & ~C) ∨
+		(~A & B & C) ∨ (~A & B & ~C) ∨ (~A & ~B & C) ∨ (~A & ~B & ~C))
+
 3.	**Y**<sub>3</sub> =
 	`(~A & B & ~C)`
 4.	**Y**<sub>4</sub> =
@@ -94,7 +112,7 @@ author: viona
 
 #	QS4
 1. **Y**<sub>1</sub> = `(~(~A ∨ ~B ∨ C) ∨ ~(A & ~B & ~C))`
-2. **Y**<sub>2</sub> = 
+2. **Y**<sub>2</sub> =  
 
 		~(~(A ∨ B ∨ C) ∨ ~(A ∨ B ∨ ~C) ∨ ~(A ∨ ~B ∨ C) ∨ ~(A ∨ ~B ∨ ~C) ∨ 
 		~(~A ∨ B ∨ C) ∨ ~(~A ∨ B ∨ ~C) ∨ ~(~A ∨ ~B ∨ C) ∨ ~(~A ∨ ~B ∨ ~C))
@@ -112,11 +130,13 @@ author: viona
 1.	**Y**<sub>8</sub> = `((((A|A)|B)|(A|A)|B))) | (((A|A)|B)|(A|A)|B))))`
 	<details>
 	<summary>&shy;</summary>
-	> <code>(A & ~B)
-	(~~A & ~B)
-	~(~A ∨ B)
-	~(((A|A)|B)|(A|A)|B)))
-	((((A|A)|B)|(A|A)|B)))|(((A|A)|B)|(A|A)|B))))</code>
+
+		(A & ~B)
+		(~~A & ~B)
+		~(~A ∨ B)
+		~(((A|A)|B)|(A|A)|B)))
+		((((A|A)|B)|(A|A)|B)))|(((A|A)|B)|(A|A)|B))))
+
 	</details>
 
 2.	**`(A ∨ ∼B)           = ((A | (B | B)) | (A | (B | B)))`**
@@ -128,7 +148,7 @@ author: viona
 
 #	QS7
 
-1.	
+1.	&shy;
 
 		1 = (AvBv~Av~B)
 		3 = (Av~B)
